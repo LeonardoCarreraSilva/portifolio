@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Portifolio Leonardo Carrera da Silva",
+  "name": "",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,9 +8,9 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "favicon-96x96.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "96X96"
     },
     {
       "src": "logo512.png",
