@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Navigator from "../header/header"
 import Home from "../home/home";
+import Sobre from "../sobre";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
      <Navigator />
       <Routes>
         <Route path="/" element={<Home />}/>
+        <Route path="/sobre" element={<Sobre />}/>
       </Routes>
   </BrowserRouter>
   );

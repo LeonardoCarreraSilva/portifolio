@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
           <Figure>
             <Figure.Image
               src={Logo}
