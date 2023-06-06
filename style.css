@@ -1,38 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Krona+One&family=Montserrat:wght@400;600&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 * {
   margin: 0;
   padding: 0;
 }
+
+.header {
+  padding: 2% 0% 0% 10%; /*10% for aling with body itens*/
+}
+
+.header__menu{
+  display: flex;
+  gap: 80px;
+}
+
+.header__menu__iten{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  color: #22d4fd;
+  text-decoration: none;
+}
+
 body {
   background-color: #000;
   box-sizing: border-box;
   color: aliceblue;
-}
-img{
-  width: 60%;
-}
-
-.corpo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10% 25%;
-}
-
-.corpo__conteudo{
-  width: 650px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.corpo__texto__Titulo {
-  font-family: "Roboto", sans-serif;
-  font-size: 50px;
-}
-
-.corpo__texto{
-  font-family: "Roboto", sans-serif;
-  font-size: 25px;
-  font-style: bold;
 }
