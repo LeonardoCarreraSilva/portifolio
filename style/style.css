@@ -11,7 +11,7 @@ body {
 }
 
 .apresentacao{
-  margin: 10% 15%;
+  margin: 10% 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,5 +57,5 @@ body {
 }
 
 .perfil{
-  width: 500px;
+  width: 615px;
 }
