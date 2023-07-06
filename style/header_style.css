@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Krona+One&family=Montserrat:wght@400;600&family=Roboto:wght@300;400&display=swap');
+:root{
+  --cor-primaria : #000;
+  --cor-secundaria : #fff;
+  --cor-terciaria: #22d4fd;
+  --cor-hover: #272727;
+
+  --fonte-primaria: 'Krona One', sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+  --fonte-terciaria: 'Roboto', sans-serif;
+}
+
 .header {
   padding: 2% 0% 0% 5%; /*10% for aling with body itens*/
 }
@@ -8,20 +20,20 @@
 }
 
 .header__menu__iten{
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-terciaria);
   font-size: 26px;
-  color: #22d4fd;
+  color: var(--cor-terciaria);
   text-decoration: none;
 }
 
 .header__menu__iten:hover, .dropbtn:focus {
-  color: #fff;
+  color: var(--cor-secundaria);
 }
 
 .dropbtn {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-terciaria);
   font-size: 26px;
-  color: #22d4fd;
+  color: var(--cor-terciaria);
   background-color: transparent;
   padding: 0px 0px 0px 0px;
   border: none;
@@ -30,7 +42,7 @@
   text-align: center;
 }
 .dropbtn:hover, .dropbtn:focus {
-  color: #fff;
+  color: var(--cor-secundaria);
 }
 .dropdown {
   position: relative;
@@ -40,17 +52,17 @@
   display: none;
   position: absolute;
   z-index: 1;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--fonte-terciaria);
   font-size: 22px;
-  color: #22d4fd;
+  color: var(--cor-terciaria);
   text-decoration: none;
 }
 
-.dropdown-content a:hover {background-color: #22d4fd;}
+.dropdown-content a:hover {background-color: var(--cor-terciaria);}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 .dropdown:hover .dropbtn {
-  color: #fff;
+  color: var(--cor-secundaria);
 }
