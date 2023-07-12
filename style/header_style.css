@@ -66,3 +66,13 @@
 .dropdown:hover .dropbtn {
   color: var(--cor-secundaria);
 }
+
+@media(max-width:1200px){
+
+  .header{
+    padding: 3%;
+  }
+  .header__menu{
+    justify-content: center;
+  }
+}
