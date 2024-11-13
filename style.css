@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #301934;
+    background-color: #232350;
     padding-top: 100vh;
 }
 
@@ -22,7 +22,19 @@ section {
     animation: fadeIn 1ms ease-in-out;
     animation-timeline: view();
     animation-range: cover 0% cover 50%;
-    gap: 10%;
+}
+
+.metade{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.metade_texto{
+    display: flex;
+    max-width: 50%;
+    justify-content: center;
+    justify-self: auto;
 }
 
 .conteudo-inicial {
@@ -38,10 +50,10 @@ h2 {
 }
 
 p {
-    font-size: large;
+    font-size: 24px;
     font-weight: 400;
     color: #FFF4EA;
-    width: 50%;
+    width: 70%;
 }
 
 img {
@@ -126,7 +138,7 @@ img {
     box-sizing: content-box;
     padding: 1em;
     margin: 1em 0;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     z-index: 1;
     /* tentar width */
 }
