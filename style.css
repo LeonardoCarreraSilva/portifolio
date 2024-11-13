@@ -142,3 +142,34 @@ img {
     z-index: 1;
     /* tentar width */
 }
+
+.projetos{
+    width: 100vw;
+    
+}
+
+.carousel {
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .carousel-images {
+    display: flex;
+    width: 70%;
+    animation: slide 20s normal; /* Duração da animação */
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    /* object-fit: cover; */
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+  }
