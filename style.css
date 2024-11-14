@@ -24,13 +24,13 @@ section {
     animation-range: cover 0% cover 50%;
 }
 
-.metade{
+.metade {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.metade_texto{
+.metade_texto {
     display: flex;
     max-width: 50%;
     justify-content: center;
@@ -57,7 +57,7 @@ p {
 }
 
 img {
-    border-radius: 15%;    
+    border-radius: 15%;
     width: 500px;
 }
 
@@ -143,33 +143,70 @@ img {
     /* tentar width */
 }
 
-.projetos{
+.projetos {
     width: 100vw;
-    
+    height: 60vh;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        margin-top: .3rem;
+    }
+
+    border: #fff;
+    /* borda para o desenvolvimento*/
+    border-style: solid;
+    /* borda para o desenvolvimento*/
 }
 
 .carousel {
-    width: 100vw;
-    height: 70vh;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
-  
-  .carousel-images {
-    display: flex;
-    width: 70%;
-    animation: slide 20s normal; /* Duração da animação */
-  }
-  
-  .carousel-images img {
     width: 100%;
-    /* object-fit: cover; */
-  }
-  
-  @keyframes slide {
-    0% { transform: translateX(0); }
-    33.33% { transform: translateX(-100%); }
-    66.66% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
-  }
+    height: 100%;
+    position: relative;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+
+.slide img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.navigation{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+navigation label{
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#slide1:checked ~ .slides .slide:nth-child(1),
+#slide2:checked ~ .slides .slide:nth-child(2),
+#slide3:checked ~ .slides .slide:nth-child(3),
+#slide4:checked ~ .slides .slide:nth-child(4),
+#slide5:checked ~ .slides .slide:nth-child(5) {
+  display: block;
+}
