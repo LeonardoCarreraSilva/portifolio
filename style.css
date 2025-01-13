@@ -1,38 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Krona+One&family=Montserrat:wght@400;600&family=Roboto&display=swap");
-* {
-  margin: 0;
-  padding: 0;
+html {
+    scroll-behavior: smooth;
 }
+
 body {
-  background-color: #000;
-  box-sizing: border-box;
-  color: aliceblue;
-}
-img{
-  width: 60%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.corpo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10% 25%;
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
 }
 
-.corpo__conteudo{
-  width: 650px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+.navbar {
+    transition: all 0.3s ease;
 }
 
-.corpo__texto__Titulo {
-  font-family: "Roboto", sans-serif;
-  font-size: 50px;
+.social-icon {
+    transition: transform 0.3s ease;
 }
 
-.corpo__texto{
-  font-family: "Roboto", sans-serif;
-  font-size: 25px;
-  font-style: bold;
+.social-icon:hover {
+    transform: translateY(-5px);
+    color: #0d6efd !important;
+}
+
+.tech-stack .badge {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+
+.display-4 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+section {
+    padding: 100px 0;
 }
